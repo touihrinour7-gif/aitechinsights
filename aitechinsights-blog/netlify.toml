@@ -1,0 +1,25 @@
+[build]
+  publish = "."
+  command = ""
+
+[dev]
+  command = ""
+  port = 3000
+  targetPort = 3000
+  autoLaunch = false
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[build.environment]
+  NODE_VERSION = "18"
