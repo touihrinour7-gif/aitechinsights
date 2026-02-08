@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Tech Insights - What Insiders Are Actually Talking About</title>
     <meta name="description" content="Deep-dives into what practitioners, developers, and insiders are actually discussing about AI—not the marketing hype.">
+    <meta name="keywords" content="AI, artificial intelligence, machine learning, LLM, OpenAI, Claude, ChatGPT, AI security, AI coding, AI news">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%233b82f6' rx='15' width='100' height='100'/><text y='.9em' x='0' font-size='70'>🤖</text></svg>">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html" class="logo">AI Tech Insights</a>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🤖</span>
+                AI Tech Insights
+            </a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -24,57 +29,88 @@
 
     <main>
         <section class="hero">
-            <h1>What Insiders Are Actually Talking About</h1>
-            <p class="tagline">Deep-dives into AI, tech, and the reality behind the hype.</p>
-            <p class="description">We dig into Hacker News, Reddit communities, and real-world implementation stories. No fluff. Just honest analysis from people actually building this stuff.</p>
+            <div class="hero-content">
+                <h1>What Insiders Are Actually Talking About</h1>
+                <p class="tagline">Deep-dives into AI, tech, and the reality behind the hype.</p>
+                <p class="description">We dig into Hacker News, Reddit communities, and real-world implementation stories. No fluff. Just honest analysis from people actually building this stuff.</p>
+            </div>
         </section>
 
         <section class="featured-articles">
-            <h2>Latest Articles</h2>
+            <div class="section-header">
+                <h2>Latest Articles</h2>
+                <p>Fresh perspectives on what's actually happening in AI</p>
+            </div>
             
-            <article class="card">
-                <span class="category">Analysis</span>
-                <h3><a href="articles/ai-bubble-reality.html">The $650 Billion Question: Why The AI Bubble Might Collapse</a></h3>
-                <p>What JPMorgan's analysts are actually calculating, and why it's kept quiet. The uncomfortable financial reality check.</p>
-                <div class="meta">February 8, 2026 · 8 min read</div>
-            </article>
+            <div class="articles-grid">
+                <article class="card">
+                    <div class="card-header">
+                        <span class="category">Analysis</span>
+                        <h3><a href="articles/ai-bubble-reality.html">The $650 Billion Question: Why The AI Bubble Might Collapse</a></h3>
+                    </div>
+                    <div class="card-body">
+                        <p>What JPMorgan's analysts are actually calculating, and why it's kept quiet. The uncomfortable financial reality check.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span>February 8, 2026</span>
+                        <span class="read-time">📖 8 min read</span>
+                    </div>
+                </article>
 
-            <article class="card">
-                <span class="category">Development</span>
-                <h3><a href="articles/ai-coding-reality.html">The Developer Who Built A Reddit Clone In A Week With Claude Code</a></h3>
-                <p>A deep dive into what's actually possible with AI coding assistants—and where they still fail spectacularly.</p>
-                <div class="meta">February 8, 2026 · 9 min read</div>
-            </article>
+                <article class="card">
+                    <div class="card-header">
+                        <span class="category">Development</span>
+                        <h3><a href="articles/ai-coding-reality.html">The Developer Who Built A Reddit Clone In A Week With Claude Code</a></h3>
+                    </div>
+                    <div class="card-body">
+                        <p>A deep dive into what's actually possible with AI coding assistants—and where they still fail spectacularly.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span>February 8, 2026</span>
+                        <span class="read-time">📖 9 min read</span>
+                    </div>
+                </article>
 
-            <article class="card">
-                <span class="category">Security</span>
-                <h3><a href="articles/prompt-injection.html">Prompt Injection Just Killed Our Production App</a></h3>
-                <p>A security researcher's horror story—and what it means for everyone building with AI in production.</p>
-                <div class="meta">February 8, 2026 · 8 min read</div>
-            </article>
+                <article class="card">
+                    <div class="card-header">
+                        <span class="category">Security</span>
+                        <h3><a href="articles/prompt-injection.html">Prompt Injection Just Killed Our Production App</a></h3>
+                    </div>
+                    <div class="card-body">
+                        <p>A security researcher's horror story—and what it means for everyone building with AI in production.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span>February 8, 2026</span>
+                        <span class="read-time">📖 8 min read</span>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section id="newsletter" class="newsletter">
-            <h2>Get the Insider Intel</h2>
-            <p>Weekly deep-dives into what practitioners are actually building, not what marketing teams are selling.</p>
-            <form action="#" method="POST" class="newsletter-form">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-            <p class="newsletter-note">Join 1,000+ readers. Unsubscribe anytime.</p>
+            <div class="newsletter-content">
+                <h2>Get the Insider Intel</h2>
+                <p>Weekly deep-dives into what practitioners are actually building, not what marketing teams are selling.</p>
+                <form action="#" method="POST" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="newsletter-note">Join 1,000+ readers. Unsubscribe anytime.</p>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>AI Tech Insights</h4>
+                <h4>🤖 AI Tech Insights</h4>
                 <p>What practitioners, developers, and insiders are actually discussing about AI.</p>
             </div>
             <div class="footer-section">
                 <h4>Connect</h4>
-                <p><a href="https://twitter.com">Twitter</a></p>
+                <p><a href="#">Twitter / X</a></p>
                 <p><a href="#">RSS Feed</a></p>
+                <p><a href="#">GitHub</a></p>
             </div>
             <div class="footer-section">
                 <h4>Legal</h4>
